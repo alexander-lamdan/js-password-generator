@@ -1,11 +1,10 @@
-function main(){
+let rangeSlider = document.querySelector('#rangeBtn');
+let passGeneratorOutput = document.querySelector('#range span');
+rangeSlider.addEventListener('input',lengthPassword,false);
+
+function lengthPassword(){
   
-  let lengthBar = document.querySelector('#rangeBtn');
-  let rangeTxt = document.querySelector('#range span').innerText;
-  lengthBar.addEventListener()
+  passGeneratorOutput.innerHTML = rangeSlider.value;
   
 }
-main();
-//Length bar should be working when user is change it
-//Get the value from the length bar
-//Output the value
+lengthPassword();
